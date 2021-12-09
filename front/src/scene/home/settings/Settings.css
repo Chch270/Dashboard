@@ -1,0 +1,16 @@
+.settings {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.button {
+    padding-top: 5%;
+}
+
+.button_connect {
+    text-align: center;
+    align-items: center;
+}

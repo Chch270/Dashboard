@@ -1,0 +1,13 @@
+{
+    "typeAcquisition": {
+        "exclude": [
+            "dotenv"
+        ]
+    },
+    "compilerOptions": {
+        "baseUrl": "src"
+    },
+    "include": [
+        "src"
+    ]
+}

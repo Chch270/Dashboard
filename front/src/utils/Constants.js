@@ -1,0 +1,1 @@
+export const DefaultWidgets = ["Weather", "Time", "Shiny Pokemon", "Mails", "Subs", "Stars", "Update Time"];

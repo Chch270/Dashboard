@@ -1,0 +1,47 @@
+.login {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+  
+.login_left {
+    width: 50%;
+    height: 100vh;
+    background-color: #d3d3d3;  
+}
+
+.login_right {
+    width: 50%;
+    height: 100vh;
+    background-color: #282c34;
+}
+
+.login_logo {
+    height: 40vmin;
+    text-align: right;
+    pointer-events: none;
+}
+
+.background {
+    height: 75vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .login_logo {
+      animation: login_logo-spin infinite 20s linear;
+    }
+}
+  
+@keyframes login_logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-link {
+    color: #61dafb;
+}
+  

@@ -1,0 +1,10 @@
+.boxForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textForm {
+    margin: 1;
+    width: 25ch;
+}

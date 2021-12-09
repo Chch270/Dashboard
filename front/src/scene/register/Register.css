@@ -1,0 +1,47 @@
+.register {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+  
+.register_left {
+    width: 50%;
+    height: 100vh;
+    background-color: #d3d3d3;  
+}
+
+.register_right {
+    width: 50%;
+    height: 100vh;
+    background-color: #282c34;
+}
+
+.register_logo {
+    height: 40vmin;
+    text-align: right;
+    pointer-events: none;
+}
+
+.background {
+    height: 75vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .register_logo {
+      animation: register_logo-spin infinite 20s linear;
+    }
+}
+  
+@keyframes register_logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-link {
+    color: #61dafb;
+}
+  

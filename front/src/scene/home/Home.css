@@ -1,0 +1,11 @@
+.grid {
+    position:relative;
+}
+
+.addButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 1%;
+    padding-right: 1%;
+}

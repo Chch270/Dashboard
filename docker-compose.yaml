@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  api:
+    build: ./api
+    container_name: back_end
+    env_file:
+      - .env
+      - db.env
+      - back.env
+    depends_on:
+      - db
+    restart: always
+    volumes:
+      - ./api:/api
+    ports:
+      - ${BACK_PORT}:${BACK_PORT}
+
+  db:
+    image: postgres:14.0-alpine
+    container_name: db_dashbord
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    # env_file:
+    #   - db.env
+    environment:
+      - "POSTGRES_USER=postgres"
+      - "POSTGRES_PASSWORD=password"
+      - "POSTGRES_DB=dashboard_db"
+
+  front:
+    build: ./front
+    container_name: front_end
+    stdin_open: true
+    env_file:
+      - .env
+    depends_on:
+      - db
+      - api
+    volumes:
+      - ./front:/front
+    restart: always
+    ports:
+      - ${PORT}:${PORT}
+
+volumes:
+  postgres_data: null
